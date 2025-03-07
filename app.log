@@ -322,3 +322,181 @@ ValueError: Could not analyze segments for one or both songs
 2025-03-06 22:52:25,184 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
 2025-03-06 22:52:37,692 - werkzeug - WARNING -  * Debugger is active!
 2025-03-06 22:52:37,703 - werkzeug - INFO -  * Debugger PIN: 761-617-925
+2025-03-06 22:56:26,405 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-06 22:56:26,407 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 22:56:26,423 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-06 22:56:27,734 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 22:56:27,740 - werkzeug - INFO -  * Debugger PIN: 761-617-925
+2025-03-06 22:56:28,704 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:28] "GET / HTTP/1.1" 200 -
+2025-03-06 22:56:32,287 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 22:56:47,713 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:47] "POST /upload HTTP/1.1" 200 -
+2025-03-06 22:56:47,761 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:47] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:48,816 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:48] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:49,863 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:49] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:51,884 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:51] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:53,153 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:53] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:54,219 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:54] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:55,901 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:55] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:56,920 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:56] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:57,948 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:57] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:58,961 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:58] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:56:59,976 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:56:59] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:00,993 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:00] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:02,009 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:02] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:03,027 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:03] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:04,041 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:04] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:05,055 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:05] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:06,075 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:06] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:06,836 - auto_mixer - INFO - Analyzing songs...
+2025-03-06 22:57:07,092 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:07] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:08,106 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:08] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:09,122 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:09] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:10,189 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:10] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:11,203 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:11] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:12,221 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:12] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:13,234 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:13] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:14,250 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:14] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:15,266 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:15] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:16,280 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:16] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:17,298 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:17] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:18,322 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:18] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:19,338 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:19] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:20,421 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:20] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:21,636 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:21] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:22,690 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:22] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:23,824 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:23] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:24,922 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:24] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:26,053 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:26] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:27,123 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:27] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:28,159 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:28] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:29,173 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:29] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:30,180 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:30] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:31,203 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:31] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:32,222 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:32] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:33,237 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:33] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:34,257 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:34] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:35,265 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:35] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:36,282 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:36] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:37,299 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:37] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:38,316 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:38] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:39,330 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:39] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:40,350 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:40] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:41,364 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:41] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:42,380 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:42] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:43,394 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:43] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:44,446 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:44] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:45,458 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:45] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:46,477 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:46] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:47,493 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:47] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:48,508 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:48] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:49,527 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:49] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:50,229 - auto_mixer - INFO - Found 6 chorus segments
+2025-03-06 22:57:50,551 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:50] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:51,648 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:51] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:52,801 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:52] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:53,902 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:53] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:54,940 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:54] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:55,954 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:55] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:56,973 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:56] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:57,983 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:57] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:57:59,001 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:57:59] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:00,019 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:00] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:01,076 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:01] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:02,155 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:02] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:02,423 - auto_mixer - INFO - Found 3 chorus segments
+2025-03-06 22:58:03,181 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:03] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:03,477 - auto_mixer - INFO - Chorus match #1: Score=0.38, Song1 at 200.3s, Song2 at 70.0s
+2025-03-06 22:58:03,477 - auto_mixer - INFO - Chorus match #2: Score=0.32, Song1 at 173.1s, Song2 at 70.0s
+2025-03-06 22:58:03,477 - auto_mixer - INFO - Chorus match #3: Score=0.32, Song1 at 184.6s, Song2 at 70.0s
+2025-03-06 22:58:04,201 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:04] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:05,400 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:05] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:06,413 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:06] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:07,424 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:07] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:08,443 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:08] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:09,458 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:09] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:10,476 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:10] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:11,491 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:11] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:12,506 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:12] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:13,520 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:13] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:14,537 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:14] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:15,557 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:15] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:16,573 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:16] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:17,586 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:17] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:18,603 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:18] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:19,619 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:19] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:20,634 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:20] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:21,651 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:21] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:22,669 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:22] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:23,681 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:23] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:24,698 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:24] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:25,711 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:25] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:26,724 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:26] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:27,748 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:27] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:28,785 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:28] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:29,828 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:29] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:30,919 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:30] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:32,909 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:32] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:34,910 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:34] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:36,918 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:36] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:38,922 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:38] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:40,916 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:40] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:42,922 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:42] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:44,922 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:44] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:46,915 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:46] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:48,920 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:48] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:50,924 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:50] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:52,930 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:52] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:54,229 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:54] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:55,919 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:55] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:58,160 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:58] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:58:59,928 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:58:59] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:01,959 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:01] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:03,920 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:03] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:05,937 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:05] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:07,916 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:07] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:09,929 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:09] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:11,926 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:11] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:13,936 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:13] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:15,586 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:15] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:16,836 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:16] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:18,012 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:18] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:19,160 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:19] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:20,968 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:20] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:22,929 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:22] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:24,928 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:24] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:26,932 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:26] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:28,941 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:28] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:30,935 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:30] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:32,941 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:32] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:34,937 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:34] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:36,968 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:36] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:38,931 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:38] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:40,351 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:40] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:41,442 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:41] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:42,460 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:42] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:43,479 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:43] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:44,489 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:44] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:45,509 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:45] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:59:45,755 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:45] "GET / HTTP/1.1" 200 -
+2025-03-06 22:59:57,121 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:59:57] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-03-06 23:00:02,949 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:02] "GET / HTTP/1.1" 200 -
+2025-03-06 23:00:03,593 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 23:00:16,563 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:16] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-03-06 23:00:21,585 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:21] "GET / HTTP/1.1" 200 -
+2025-03-06 23:00:22,315 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-06 23:00:22,317 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 23:00:22,347 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-06 23:00:22,683 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 23:00:23,376 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:23] "GET / HTTP/1.1" 200 -
+2025-03-06 23:00:23,897 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 23:00:24,623 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 23:00:24,636 - werkzeug - INFO -  * Debugger PIN: 761-617-925
+2025-03-06 23:00:32,525 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:32] "GET / HTTP/1.1" 200 -
+2025-03-06 23:00:43,868 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:43] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-03-06 23:00:45,027 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 23:00:45] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2025-03-06 23:01:49,339 - werkzeug - INFO -  * Detected change in 'D:\\Codes\\auto-mixer\\app.py', reloading
+2025-03-06 23:01:55,510 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-06 23:01:58,229 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 23:01:58,245 - werkzeug - INFO -  * Debugger PIN: 761-617-925

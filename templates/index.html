@@ -84,6 +84,9 @@
         .restart-button {
             margin-top: 1rem;
         }
+        .retry-button {
+            margin-top: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -120,6 +123,9 @@
                 </div>
                 <p class="mt-2">Mixing your songs...</p>
                 <div class="status-message" id="statusMessage"></div>
+                <button class="btn btn-warning retry-button" id="retryButton" style="display: none;">
+                    <i class="fas fa-redo"></i> Cancel and Try Again
+                </button>
             </div>
 
             <div class="progress-wrapper">
@@ -161,6 +167,12 @@
             const statusMessage = document.getElementById('statusMessage');
             const fileInputs = document.querySelectorAll('input[type="file"]');
             const fileWrappers = document.querySelectorAll('.file-input-wrapper');
+            const retryButton = document.getElementById('retryButton');
+
+            let pollTimer = null;
+            const POLL_INTERVAL = 1000;
+            const MAX_RETRIES = 300; // 5 minutes
+            let retryCount = 0;
 
             // Handle drag and drop
             fileWrappers.forEach((wrapper, index) => {
@@ -202,10 +214,23 @@
                 input.addEventListener('change', () => updateFileName(input, index));
             });
 
+            async function resetMixingStatus() {
+                try {
+                    await fetch('/reset', { method: 'POST' });
+                    window.location.reload();
+                } catch (error) {
+                    console.error('Error resetting status:', error);
+                    window.location.reload();
+                }
+            }
+
+            retryButton.addEventListener('click', resetMixingStatus);
+
             form.addEventListener('submit', async function(e) {
                 e.preventDefault();
                 
                 const formData = new FormData(form);
+                retryCount = 0;
                 
                 // Reset UI
                 loadingSpinner.style.display = 'block';
@@ -213,6 +238,7 @@
                 resultWrapper.style.display = 'none';
                 errorMessage.style.display = 'none';
                 form.style.display = 'none';
+                retryButton.style.display = 'none';
 
                 try {
                     const response = await fetch('/upload', {
@@ -221,7 +247,8 @@
                     });
 
                     if (!response.ok) {
-                        throw new Error(await response.text());
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || 'Upload failed');
                     }
 
                     // Start polling for status
@@ -233,7 +260,16 @@
             });
 
             async function pollStatus() {
+                if (pollTimer) {
+                    clearTimeout(pollTimer);
+                }
+
                 try {
+                    retryCount++;
+                    if (retryCount > MAX_RETRIES) {
+                        throw new Error('Process timed out. Please try again.');
+                    }
+
                     const response = await fetch('/status');
                     const data = await response.json();
 
@@ -254,6 +290,7 @@
                         loadingSpinner.style.display = 'none';
                         progressWrapper.style.display = 'none';
                         resultWrapper.style.display = 'block';
+                        retryButton.style.display = 'none';
                         
                         // Set download link
                         downloadButton.href = `/download/${data.result}`;
@@ -261,8 +298,12 @@
                     }
 
                     if (data.is_mixing) {
+                        // Show retry button after 30 seconds
+                        if (retryCount > 30) {
+                            retryButton.style.display = 'block';
+                        }
                         // Continue polling
-                        setTimeout(pollStatus, 1000);
+                        pollTimer = setTimeout(pollStatus, POLL_INTERVAL);
                     } else {
                         if (!data.result) {
                             showError('Mixing process failed');
@@ -270,7 +311,7 @@
                     }
 
                 } catch (error) {
-                    showError('Error checking mixing status');
+                    showError(error.message);
                 }
             }
 
@@ -280,7 +321,15 @@
                 errorMessage.style.display = 'block';
                 errorMessage.textContent = message;
                 form.style.display = 'block';
+                retryButton.style.display = 'none';
+                
+                if (pollTimer) {
+                    clearTimeout(pollTimer);
+                }
             }
+
+            // Reset status on page load
+            resetMixingStatus();
         });
     </script>
 </body>

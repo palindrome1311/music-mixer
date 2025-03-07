@@ -33,12 +33,26 @@ mixing_status = {
     'progress': 0,
     'result': None,
     'error': None,
-    'status_message': None
+    'status_message': None,
+    'last_update': None
 }
 
 ALLOWED_EXTENSIONS = {'mp3', 'wav'}
 FFMPEG_PATH = "C:\\Users\\mitta\\Downloads\\ffmpeg-master-latest-win64-gpl\\bin\\ffmpeg.exe"
 FFPROBE_PATH = "C:\\Users\\mitta\\Downloads\\ffmpeg-master-latest-win64-gpl\\bin\\ffprobe.exe"
+MIXING_TIMEOUT = 300  # 5 minutes timeout
+
+def reset_mixing_status():
+    """Reset the mixing status to initial state"""
+    global mixing_status
+    mixing_status.update({
+        'is_mixing': False,
+        'progress': 0,
+        'result': None,
+        'error': None,
+        'status_message': None,
+        'last_update': None
+    })
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -61,8 +75,19 @@ def clean_old_files():
 def update_mixing_progress(stage, progress):
     """Update mixing progress with stage information"""
     global mixing_status
-    mixing_status['progress'] = progress
-    mixing_status['status_message'] = stage
+    mixing_status.update({
+        'progress': progress,
+        'status_message': stage,
+        'last_update': time.time()
+    })
+
+def check_mixing_timeout():
+    """Check if mixing process has timed out"""
+    if not mixing_status['last_update']:
+        return False
+    
+    time_elapsed = time.time() - mixing_status['last_update']
+    return time_elapsed > MIXING_TIMEOUT
 
 def mix_songs_task(song1_path, song2_path):
     """Background task to mix songs"""
@@ -97,8 +122,10 @@ def mix_songs_task(song1_path, song2_path):
     finally:
         # Clean up uploaded files
         try:
-            os.remove(song1_path)
-            os.remove(song2_path)
+            if os.path.exists(song1_path):
+                os.remove(song1_path)
+            if os.path.exists(song2_path):
+                os.remove(song2_path)
         except Exception as e:
             logger.error(f"Error cleaning up uploaded files: {str(e)}")
         
@@ -106,35 +133,46 @@ def mix_songs_task(song1_path, song2_path):
 
 @app.route('/')
 def index():
+    # Reset mixing status on page load
+    reset_mixing_status()
     return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_files():
     global mixing_status
     
+    # Check if there's a stalled mixing process
+    if mixing_status['is_mixing'] and check_mixing_timeout():
+        logger.warning("Detected stalled mixing process, resetting status")
+        reset_mixing_status()
+    
     if mixing_status['is_mixing']:
         return jsonify({'error': 'Another mixing process is already running'}), 400
     
     # Reset mixing status
-    mixing_status = {
+    mixing_status.update({
         'is_mixing': True,
         'progress': 0,
         'result': None,
         'error': None,
-        'status_message': 'Starting upload...'
-    }
+        'status_message': 'Starting upload...',
+        'last_update': time.time()
+    })
     
     try:
         if 'song1' not in request.files or 'song2' not in request.files:
+            reset_mixing_status()
             return jsonify({'error': 'Both songs must be provided'}), 400
         
         song1 = request.files['song1']
         song2 = request.files['song2']
         
         if song1.filename == '' or song2.filename == '':
+            reset_mixing_status()
             return jsonify({'error': 'Both songs must be selected'}), 400
         
         if not (allowed_file(song1.filename) and allowed_file(song2.filename)):
+            reset_mixing_status()
             return jsonify({'error': 'Invalid file format. Only MP3 and WAV files are allowed'}), 400
         
         # Clean old files
@@ -161,14 +199,27 @@ def upload_files():
         return jsonify({'message': 'Mixing process started'}), 200
         
     except Exception as e:
-        mixing_status['is_mixing'] = False
-        mixing_status['error'] = str(e)
+        reset_mixing_status()
         logger.error(f"Error in upload: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/status')
 def get_status():
+    # Check for timeout
+    if mixing_status['is_mixing'] and check_mixing_timeout():
+        logger.warning("Mixing process timed out")
+        reset_mixing_status()
+        return jsonify({
+            'error': 'Mixing process timed out. Please try again.',
+            'is_mixing': False
+        })
     return jsonify(mixing_status)
+
+@app.route('/reset', methods=['POST'])
+def reset_status():
+    """Emergency endpoint to reset mixing status"""
+    reset_mixing_status()
+    return jsonify({'message': 'Mixing status reset successfully'}), 200
 
 @app.route('/download/<filename>')
 def download_file(filename):
