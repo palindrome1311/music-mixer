@@ -1,0 +1,324 @@
+2025-03-02 22:54:08,031 - __main__ - INFO - Received POST request for file upload
+2025-03-02 22:54:08,139 - __main__ - INFO - Song 1 filename: Choot Vol. 1.mp3
+2025-03-02 22:54:08,145 - __main__ - INFO - Song 2 filename: 2. BIBA (feat. SLICK TRICK, TOSHI) _ Farasat Anees _ OFIVE1.mp3
+2025-03-02 22:54:08,146 - __main__ - INFO - Saving files to: uploads\2f502e58-87c3-44bf-96c4-6b0bdf8cb9ff.mp3 and uploads\9c7ff71a-d65a-4c8a-99b7-926fb6436389.mp3
+2025-03-02 22:54:08,266 - __main__ - INFO - File sizes - Song 1: 4546488 bytes, Song 2: 3461466 bytes
+2025-03-02 22:54:08,267 - __main__ - INFO - Starting song mixing process
+2025-03-02 22:54:23,302 - __main__ - INFO - Received POST request for file upload
+2025-03-02 22:54:23,488 - __main__ - INFO - Song 1 filename: Choot Vol. 1.mp3
+2025-03-02 22:54:23,588 - __main__ - INFO - Song 2 filename: 2. BIBA (feat. SLICK TRICK, TOSHI) _ Farasat Anees _ OFIVE1.mp3
+2025-03-02 22:54:23,590 - __main__ - INFO - Saving files to: uploads\3166c738-d975-40d3-84e4-8e21ba107580.mp3 and uploads\fcf94138-535b-40e1-9099-78e2fb143701.mp3
+2025-03-02 22:54:23,720 - __main__ - INFO - File sizes - Song 1: 4546488 bytes, Song 2: 3461466 bytes
+2025-03-02 22:54:23,723 - __main__ - INFO - Starting song mixing process
+2025-03-02 22:54:39,697 - __main__ - ERROR - Error during processing: Could not detect BPM for one or both songs
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 42, in mix_songs
+    raise ValueError("Could not detect BPM for one or both songs")
+ValueError: Could not detect BPM for one or both songs
+2025-03-02 22:54:39,723 - __main__ - ERROR - Error during processing: Could not detect BPM for one or both songs
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 42, in mix_songs
+    raise ValueError("Could not detect BPM for one or both songs")
+ValueError: Could not detect BPM for one or both songs
+2025-03-02 22:56:44,331 - __main__ - INFO - Received POST request for file upload
+2025-03-02 22:56:44,341 - __main__ - INFO - Song 1 filename: Angaaron.mp3
+2025-03-02 22:56:44,343 - __main__ - INFO - Song 2 filename: Happy-birthday-piano-music.mp3
+2025-03-02 22:56:44,346 - __main__ - INFO - Saving files to: uploads\4d4a4916-2734-4e1e-8493-716c31113839.mp3 and uploads\c6a1318a-7d60-437f-af69-201c56de41c7.mp3
+2025-03-02 22:56:46,106 - __main__ - INFO - File sizes - Song 1: 111845 bytes, Song 2: 412525 bytes
+2025-03-02 22:56:46,107 - __main__ - INFO - Starting song mixing process
+2025-03-02 22:56:49,871 - __main__ - ERROR - Error during processing: Could not detect BPM for one or both songs
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 72, in mix_songs
+    raise ValueError("Could not detect BPM for one or both songs")
+ValueError: Could not detect BPM for one or both songs
+2025-03-02 22:58:53,952 - __main__ - INFO - Received POST request for file upload
+2025-03-02 22:58:53,965 - __main__ - INFO - Song 1 filename: Happy-birthday-piano-music.mp3
+2025-03-02 22:58:53,968 - __main__ - INFO - Song 2 filename: Angaaron.mp3
+2025-03-02 22:58:53,970 - __main__ - INFO - Saving files to: uploads\1074893c-1f80-4132-ac0a-87164f2e7ed2.mp3 and uploads\09637c76-3bef-43d8-a308-b32a7a43bcb2.mp3
+2025-03-02 22:58:53,984 - __main__ - INFO - File sizes - Song 1: 412525 bytes, Song 2: 111845 bytes
+2025-03-02 22:58:53,985 - __main__ - INFO - Starting song mixing process
+2025-03-02 22:58:54,671 - __main__ - ERROR - Error during processing: Could not detect BPM for one or both songs
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 72, in mix_songs
+    raise ValueError("Could not detect BPM for one or both songs")
+ValueError: Could not detect BPM for one or both songs
+2025-03-02 23:00:16,789 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:00:16,795 - __main__ - INFO - Song 1 filename: Happy-birthday-piano-music.mp3
+2025-03-02 23:00:16,796 - __main__ - INFO - Song 2 filename: Angaaron.mp3
+2025-03-02 23:00:16,798 - __main__ - INFO - Saving files to: uploads\ab930a59-f2c8-4e93-b756-cb38435d0c2e.mp3 and uploads\0a36091b-a6f1-4961-abb5-add41f26cceb.mp3
+2025-03-02 23:00:16,805 - __main__ - INFO - File sizes - Song 1: 412525 bytes, Song 2: 111845 bytes
+2025-03-02 23:00:16,806 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:03:01,023 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:03:01,078 - __main__ - INFO - Song 1 filename: Angaaron.mp3
+2025-03-02 23:03:01,085 - __main__ - INFO - Song 2 filename: Shubh - Baller (Official Music Video).mp3
+2025-03-02 23:03:01,087 - __main__ - INFO - Saving files to: uploads\29dd347a-e99b-4b35-b663-0850361e89f8.mp3 and uploads\61d6f882-eb04-46f1-887f-e7b68644ac75.mp3
+2025-03-02 23:03:01,104 - __main__ - INFO - File sizes - Song 1: 111845 bytes, Song 2: 2457110 bytes
+2025-03-02 23:03:01,105 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:03:17,953 - __main__ - ERROR - Error during processing: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 78, in mix_songs
+    song1 = self.load_audio(song1_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 55, in load_audio
+    audio = AudioSegment.from_file(audio_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitta\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pydub\audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitta\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pydub\utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2025-03-02 23:05:56,373 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:05:56,414 - __main__ - INFO - Song 1 filename: Angaaron.mp3
+2025-03-02 23:05:56,416 - __main__ - INFO - Song 2 filename: Shubh - Baller (Official Music Video).mp3
+2025-03-02 23:05:56,417 - __main__ - INFO - Saving files to: uploads\816ff4d2-33e5-483a-8b98-50cf35c2a60c.mp3 and uploads\2aa573ea-43cc-4fc5-b4ef-50f2de9ae051.mp3
+2025-03-02 23:05:56,440 - __main__ - INFO - File sizes - Song 1: 111845 bytes, Song 2: 2457110 bytes
+2025-03-02 23:05:56,446 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:06:00,381 - __main__ - ERROR - Error during processing: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 104, in mix_songs
+    song1 = self.load_audio(song1_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 75, in load_audio
+    audio = AudioSegment.from_mp3(audio_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitta\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pydub\audio_segment.py", line 796, in from_mp3
+    return cls.from_file(file, 'mp3', parameters=parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitta\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pydub\audio_segment.py", line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mitta\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pydub\utils.py", line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2025-03-02 23:07:41,162 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:07:41,256 - __main__ - INFO - Song 1 filename: Angaaron.mp3
+2025-03-02 23:07:41,258 - __main__ - INFO - Song 2 filename: Choot Vol. 1.mp3
+2025-03-02 23:07:41,261 - __main__ - INFO - Saving files to: uploads\33ddff4f-9839-49ab-a7e7-fcadd4f3a7b1.mp3 and uploads\7d65cf6b-b494-4ece-87c0-2a78774d1c0d.mp3
+2025-03-02 23:07:41,282 - __main__ - INFO - File sizes - Song 1: 111845 bytes, Song 2: 4546488 bytes
+2025-03-02 23:07:41,284 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:07:47,142 - __main__ - INFO - Song mixing completed
+2025-03-02 23:07:47,144 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:07:47,147 - __main__ - INFO - Sending mixed file: output\mixed_83ab87d4-31f3-4239-bb23-552f79b5c111.mp3 (Size: 12524 bytes)
+2025-03-02 23:08:48,893 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:08:49,139 - __main__ - INFO - Song 1 filename: Sadi Gali.mp3
+2025-03-02 23:08:49,141 - __main__ - INFO - Song 2 filename: Sajna Ji Vaari Vaari.mp3
+2025-03-02 23:08:49,143 - __main__ - INFO - Saving files to: uploads\3d1de724-ff09-42aa-b972-0c34e0a205cd.mp3 and uploads\3eafd282-be1b-4c18-8916-ae9afe52053c.mp3
+2025-03-02 23:08:49,261 - __main__ - INFO - File sizes - Song 1: 10642452 bytes, Song 2: 8922550 bytes
+2025-03-02 23:08:49,262 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:08:54,807 - __main__ - INFO - Song mixing completed
+2025-03-02 23:08:54,808 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:08:54,817 - __main__ - INFO - Sending mixed file: output\mixed_966b4cc4-9f3e-4f7f-9a9e-e08d01598938.mp3 (Size: 240552 bytes)
+2025-03-02 23:12:34,888 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:12:35,105 - __main__ - INFO - Song 1 filename: Sajna Ji Vaari Vaari.mp3
+2025-03-02 23:12:35,109 - __main__ - INFO - Song 2 filename: Sadi Gali.mp3
+2025-03-02 23:12:35,114 - __main__ - INFO - Saving files to: uploads\05f058ca-ad5a-4ebc-89cc-67dbb2c0e569.mp3 and uploads\2d8482ce-74c5-49cf-a3e9-24b47acd8eee.mp3
+2025-03-02 23:12:35,229 - __main__ - INFO - File sizes - Song 1: 8922550 bytes, Song 2: 10642452 bytes
+2025-03-02 23:12:35,232 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:12:42,705 - __main__ - ERROR - Error during processing: AudioSegment.overlay() got an unexpected keyword argument 'crossfade'
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 176, in mix_songs
+    mixed = song1_segment.overlay(
+            ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AudioSegment.overlay() got an unexpected keyword argument 'crossfade'
+2025-03-02 23:13:43,427 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:13:43,605 - __main__ - INFO - Song 1 filename: Sajna Ji Vaari Vaari.mp3
+2025-03-02 23:13:43,607 - __main__ - INFO - Song 2 filename: Sadi Gali.mp3
+2025-03-02 23:13:43,609 - __main__ - INFO - Saving files to: uploads\25ba7898-7cfa-45b8-9e95-f3d031a6c50e.mp3 and uploads\67bfe6b4-1aad-43b9-9de0-91a3583df73a.mp3
+2025-03-02 23:13:43,775 - __main__ - INFO - File sizes - Song 1: 8922550 bytes, Song 2: 10642452 bytes
+2025-03-02 23:13:43,777 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:13:51,022 - __main__ - INFO - Song mixing completed
+2025-03-02 23:13:51,023 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:13:51,038 - __main__ - INFO - Sending mixed file: output\mixed_eb116483-92b1-41fb-bb38-1dfd3cc313ee.mp3 (Size: 240428 bytes)
+2025-03-02 23:15:03,760 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:15:03,865 - __main__ - INFO - Song 1 filename: Choot Vol. 1.mp3
+2025-03-02 23:15:03,867 - __main__ - INFO - Song 2 filename: 2. BIBA (feat. SLICK TRICK, TOSHI) _ Farasat Anees _ OFIVE1.mp3
+2025-03-02 23:15:03,868 - __main__ - INFO - Saving files to: uploads\878a9451-3fe2-482a-b682-ae52004b54fa.mp3 and uploads\7968fb7c-60e1-4f9b-959f-02ddc7cc47fe.mp3
+2025-03-02 23:15:03,903 - __main__ - INFO - File sizes - Song 1: 4546488 bytes, Song 2: 3461466 bytes
+2025-03-02 23:15:03,904 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:15:07,405 - __main__ - INFO - Song mixing completed
+2025-03-02 23:15:07,406 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:15:07,410 - __main__ - INFO - Sending mixed file: output\mixed_c977c7a3-bde9-44d9-a879-d0b437273d3d.mp3 (Size: 240552 bytes)
+2025-03-02 23:17:19,938 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:17:20,060 - __main__ - INFO - Song 1 filename: Choot Vol. 1.mp3
+2025-03-02 23:17:20,063 - __main__ - INFO - Song 2 filename: 2. BIBA (feat. SLICK TRICK, TOSHI) _ Farasat Anees _ OFIVE1.mp3
+2025-03-02 23:17:20,066 - __main__ - INFO - Saving files to: uploads\c23021a1-b03c-4cb9-ab42-a9f518de73d6.mp3 and uploads\7b3906fa-df60-419a-9d34-6bac60f03a54.mp3
+2025-03-02 23:17:20,117 - __main__ - INFO - File sizes - Song 1: 4546488 bytes, Song 2: 3461466 bytes
+2025-03-02 23:17:20,118 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:17:27,384 - __main__ - INFO - Song mixing completed
+2025-03-02 23:17:27,385 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:17:27,390 - __main__ - INFO - Sending mixed file: output\mixed_9a11aaa1-49c0-46ec-870b-e942e1bf4e03.mp3 (Size: 240552 bytes)
+2025-03-02 23:19:24,767 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:19:24,873 - __main__ - INFO - Song 1 filename: Angaaron.mp3
+2025-03-02 23:19:24,877 - __main__ - INFO - Song 2 filename: Sadi Gali.mp3
+2025-03-02 23:19:24,879 - __main__ - INFO - Saving files to: uploads\0f280167-c716-4f62-b267-4dd461698356.mp3 and uploads\ee9e5e44-2e10-4a62-91b6-90a2c60bc58b.mp3
+2025-03-02 23:19:24,948 - __main__ - INFO - File sizes - Song 1: 111845 bytes, Song 2: 10642452 bytes
+2025-03-02 23:19:24,949 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:19:31,177 - __main__ - ERROR - Error during processing: Could not analyze segments for one or both songs
+Traceback (most recent call last):
+  File "D:\Codes\auto-mixer\app.py", line 82, in upload_files
+    mixer.mix_songs(song1_path, song2_path, output_path)
+  File "D:\Codes\auto-mixer\auto_mixer.py", line 201, in mix_songs
+    raise ValueError("Could not analyze segments for one or both songs")
+ValueError: Could not analyze segments for one or both songs
+2025-03-02 23:20:55,831 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:20:56,081 - __main__ - INFO - Song 1 filename: Choot Vol. 1.mp3
+2025-03-02 23:20:56,093 - __main__ - INFO - Song 2 filename: 2. BIBA (feat. SLICK TRICK, TOSHI) _ Farasat Anees _ OFIVE1.mp3
+2025-03-02 23:20:56,094 - __main__ - INFO - Saving files to: uploads\e8729fc4-e6d2-4e1c-aea3-29b2e268de4b.mp3 and uploads\6c862497-3a7f-4efb-8b93-a70422cafcaf.mp3
+2025-03-02 23:20:56,173 - __main__ - INFO - File sizes - Song 1: 4546488 bytes, Song 2: 3461466 bytes
+2025-03-02 23:20:56,173 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:21:08,595 - __main__ - INFO - Song mixing completed
+2025-03-02 23:21:08,596 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:21:08,601 - __main__ - INFO - Sending mixed file: output\mixed_18ad0221-855f-44ec-9380-704ced0361cc.mp3 (Size: 265630 bytes)
+2025-03-02 23:21:52,306 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:21:52,542 - __main__ - INFO - Song 1 filename: Choot Vol. 1.mp3
+2025-03-02 23:21:52,544 - __main__ - INFO - Song 2 filename: Sadi Gali.mp3
+2025-03-02 23:21:52,545 - __main__ - INFO - Saving files to: uploads\be6a9771-5c43-4cb7-8fb2-575076d841f9.mp3 and uploads\01bf06e0-4631-49ce-b3dd-89a128319a87.mp3
+2025-03-02 23:21:52,608 - __main__ - INFO - File sizes - Song 1: 4546488 bytes, Song 2: 10642452 bytes
+2025-03-02 23:21:52,609 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:22:02,384 - __main__ - INFO - Song mixing completed
+2025-03-02 23:22:02,386 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:22:02,394 - __main__ - INFO - Sending mixed file: output\mixed_bc5e13e8-c26d-40cd-ab03-11ae70c7d366.mp3 (Size: 294469 bytes)
+2025-03-02 23:25:33,474 - __main__ - INFO - Received POST request for file upload
+2025-03-02 23:25:33,562 - __main__ - INFO - Song 1 filename: 2. BIBA (feat. SLICK TRICK, TOSHI) _ Farasat Anees _ OFIVE1.mp3
+2025-03-02 23:25:33,564 - __main__ - INFO - Song 2 filename: Choot Vol. 1.mp3
+2025-03-02 23:25:33,566 - __main__ - INFO - Saving files to: uploads\dfa4237a-2f08-45fe-955e-fd0699edf9e4.mp3 and uploads\666d241e-0432-4220-8533-77447a3675fc.mp3
+2025-03-02 23:25:33,671 - __main__ - INFO - File sizes - Song 1: 3461466 bytes, Song 2: 4546488 bytes
+2025-03-02 23:25:33,672 - __main__ - INFO - Starting song mixing process
+2025-03-02 23:25:53,663 - __main__ - INFO - Song mixing completed
+2025-03-02 23:25:53,664 - __main__ - INFO - Cleaning up uploaded files
+2025-03-02 23:25:53,669 - __main__ - INFO - Sending mixed file: output\mixed_07325ceb-6baa-4bb0-8a0c-6d005a77cc30.mp3 (Size: 240552 bytes)
+2025-03-06 22:43:44,852 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-06 22:43:44,852 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 22:43:44,975 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-06 22:43:45,745 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 22:43:45,746 - werkzeug - INFO -  * Debugger PIN: 761-617-925
+2025-03-06 22:43:49,537 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:43:49] "GET / HTTP/1.1" 200 -
+2025-03-06 22:43:51,309 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:43:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 22:44:05,727 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:05] "POST /upload HTTP/1.1" 200 -
+2025-03-06 22:44:05,777 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:05] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:06,824 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:06] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:07,857 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:07] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:08,872 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:08] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:12,805 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:12] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:12,885 - auto_mixer - INFO - Analyzing songs...
+2025-03-06 22:44:14,760 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:14] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:17,598 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:17] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:18,725 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:18] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:19,838 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:19] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:21,567 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:21] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:22,969 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:22] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:27,421 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:27] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:30,129 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:30] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:31,788 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:31] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:33,050 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:33] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:34,860 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:34] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:36,750 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:36] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:37,255 - auto_mixer - INFO - Found 3 chorus segments
+2025-03-06 22:44:38,740 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:38] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:40,768 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:40] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:42,772 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:42] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:44,782 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:44] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:46,752 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:46] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:48,767 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:48] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:50,752 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:50] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:52,773 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:52] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:44:54,966 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:44:54] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:00,013 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:00] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:02,390 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:02] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:03,824 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:03] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:06,017 - auto_mixer - INFO - Found 3 chorus segments
+2025-03-06 22:45:07,234 - auto_mixer - INFO - Chorus match #1: Score=0.34, Song1 at 88.1s, Song2 at 183.8s
+2025-03-06 22:45:07,235 - auto_mixer - INFO - Chorus match #2: Score=0.33, Song1 at 70.0s, Song2 at 183.8s
+2025-03-06 22:45:07,237 - auto_mixer - INFO - Chorus match #3: Score=0.33, Song1 at 105.9s, Song2 at 17.3s
+2025-03-06 22:45:09,092 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:09] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:23,712 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:23] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:35,598 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:35] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:41,495 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:41] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:42,742 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:42] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:49,999 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:49] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:51,751 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:51] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:53,923 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:53] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:55,734 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:55] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:57,736 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:57] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:45:59,771 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:45:59] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:01,625 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:01] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:03,804 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:03] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:05,747 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:05] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:07,731 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:07] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:09,796 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:09] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:11,741 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:11] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:13,851 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:13] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:15,745 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:15] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:18,877 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:18] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:20,743 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:20] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:22,801 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:22] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:24,607 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:24] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:25,673 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:25] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:26,807 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:26] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:28,741 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:28] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:30,743 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:30] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:32,733 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:32] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:34,727 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:34] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:35,746 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:35] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:36,775 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:36] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:37,801 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:37] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:38,819 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:38] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:39,837 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:39] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:40,855 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:40] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:41,867 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:41] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:42,881 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:42] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:43,901 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:43] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:44,915 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:44] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:45,931 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:45] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:46,946 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:46] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:47,960 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:47] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:48,978 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:48] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:49,995 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:49] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:51,006 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:51] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:52,029 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:52] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:53,042 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:53] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:54,056 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:54] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:55,068 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:55] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:56,090 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:56] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:57,106 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:57] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:58,124 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:58] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:46:59,339 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:46:59] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:47:00,868 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:47:00] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:47:02,744 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:47:02] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:47:04,734 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:47:04] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:47:06,194 - auto_mixer - WARNING - Failed to create mix 3
+2025-03-06 22:47:06,734 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:47:06] "GET /status HTTP/1.1" 200 -
+2025-03-06 22:50:28,320 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 22:50:28] "[33mGET /download/output/mix_20250306_224405_mix1.mp3 HTTP/1.1[0m" 404 -
+2025-03-06 22:52:23,386 - werkzeug - INFO -  * Detected change in 'D:\\Codes\\auto-mixer\\app.py', reloading
+2025-03-06 22:52:23,387 - werkzeug - INFO -  * Detected change in 'D:\\Codes\\auto-mixer\\app.py', reloading
+2025-03-06 22:52:25,184 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-06 22:52:37,692 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 22:52:37,703 - werkzeug - INFO -  * Debugger PIN: 761-617-925

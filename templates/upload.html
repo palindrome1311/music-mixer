@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Mixer - Mix Your Songs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .file-input {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e1f5fe;
+            border-radius: 4px;
+            color: #0277bd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Auto Mixer</h1>
+        <form class="upload-form" method="POST" enctype="multipart/form-data">
+            <div class="file-input">
+                <label for="song1">First Song (MP3 or WAV):</label>
+                <input type="file" id="song1" name="song1" accept=".mp3,.wav" required>
+            </div>
+            
+            <div class="file-input">
+                <label for="song2">Second Song (MP3 or WAV):</label>
+                <input type="file" id="song2" name="song2" accept=".mp3,.wav" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">Mix Songs</button>
+        </form>
+        
+        <div class="info">
+            <p>Upload two songs and we'll create a 30-second mix by matching their BPMs!</p>
+        </div>
+    </div>
+</body>
+</html> 

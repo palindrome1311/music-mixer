@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Mixer - Mix Your Songs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 2rem;
+        }
+        .upload-area {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .file-input-wrapper {
+            position: relative;
+            margin-bottom: 1rem;
+            border: 2px dashed #dee2e6;
+            border-radius: 5px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .file-input-wrapper:hover {
+            border-color: #0d6efd;
+        }
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .progress-wrapper {
+            display: none;
+            margin-top: 2rem;
+        }
+        .result-wrapper {
+            display: none;
+            margin-top: 2rem;
+        }
+        .error-message {
+            display: none;
+            color: #dc3545;
+            margin-top: 1rem;
+        }
+        .loading-spinner {
+            display: none;
+            margin: 2rem auto;
+        }
+        .file-name {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .status-message {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #0d6efd;
+            text-align: center;
+        }
+        .drag-over {
+            border-color: #0d6efd;
+            background-color: rgba(13, 110, 253, 0.05);
+        }
+        .file-input-wrapper.has-file {
+            border-color: #198754;
+            background-color: rgba(25, 135, 84, 0.05);
+        }
+        .restart-button {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Auto Mixer</h1>
+        <div class="upload-area">
+            <form id="uploadForm">
+                <div class="file-input-wrapper">
+                    <div class="upload-icon">
+                        <i class="fas fa-music fa-2x mb-2"></i>
+                        <p>Drop or click to upload first song</p>
+                    </div>
+                    <input type="file" name="song1" accept=".mp3,.wav" required>
+                    <div class="file-name" id="fileName1"></div>
+                </div>
+                
+                <div class="file-input-wrapper">
+                    <div class="upload-icon">
+                        <i class="fas fa-music fa-2x mb-2"></i>
+                        <p>Drop or click to upload second song</p>
+                    </div>
+                    <input type="file" name="song2" accept=".mp3,.wav" required>
+                    <div class="file-name" id="fileName2"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100" id="mixButton">
+                    Mix Songs
+                </button>
+            </form>
+
+            <div class="loading-spinner text-center" id="loadingSpinner">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-2">Mixing your songs...</p>
+                <div class="status-message" id="statusMessage"></div>
+            </div>
+
+            <div class="progress-wrapper">
+                <div class="progress" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                         role="progressbar" 
+                         style="width: 0%" 
+                         id="progressBar">0%</div>
+                </div>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <div class="result-wrapper">
+                <div class="alert alert-success">
+                    Your mix is ready!
+                </div>
+                <a href="#" class="btn btn-success w-100" id="downloadButton">
+                    <i class="fas fa-download"></i> Download Mixed Song
+                </a>
+                <button class="btn btn-primary w-100 restart-button" onclick="window.location.reload()">
+                    <i class="fas fa-redo"></i> Mix Another Song
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('uploadForm');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const progressWrapper = document.querySelector('.progress-wrapper');
+            const progressBar = document.getElementById('progressBar');
+            const resultWrapper = document.querySelector('.result-wrapper');
+            const errorMessage = document.getElementById('errorMessage');
+            const downloadButton = document.getElementById('downloadButton');
+            const fileName1 = document.getElementById('fileName1');
+            const fileName2 = document.getElementById('fileName2');
+            const statusMessage = document.getElementById('statusMessage');
+            const fileInputs = document.querySelectorAll('input[type="file"]');
+            const fileWrappers = document.querySelectorAll('.file-input-wrapper');
+
+            // Handle drag and drop
+            fileWrappers.forEach((wrapper, index) => {
+                wrapper.addEventListener('dragover', (e) => {
+                    e.preventDefault();
+                    wrapper.classList.add('drag-over');
+                });
+
+                wrapper.addEventListener('dragleave', () => {
+                    wrapper.classList.remove('drag-over');
+                });
+
+                wrapper.addEventListener('drop', (e) => {
+                    e.preventDefault();
+                    wrapper.classList.remove('drag-over');
+                    const file = e.dataTransfer.files[0];
+                    if (file) {
+                        const input = wrapper.querySelector('input[type="file"]');
+                        input.files = e.dataTransfer.files;
+                        updateFileName(input, index);
+                    }
+                });
+            });
+
+            // Update file names and wrapper styles when files are selected
+            function updateFileName(input, index) {
+                const wrapper = fileWrappers[index];
+                const fileName = index === 0 ? fileName1 : fileName2;
+                if (input.files[0]) {
+                    fileName.textContent = input.files[0].name;
+                    wrapper.classList.add('has-file');
+                } else {
+                    fileName.textContent = '';
+                    wrapper.classList.remove('has-file');
+                }
+            }
+
+            fileInputs.forEach((input, index) => {
+                input.addEventListener('change', () => updateFileName(input, index));
+            });
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(form);
+                
+                // Reset UI
+                loadingSpinner.style.display = 'block';
+                progressWrapper.style.display = 'block';
+                resultWrapper.style.display = 'none';
+                errorMessage.style.display = 'none';
+                form.style.display = 'none';
+
+                try {
+                    const response = await fetch('/upload', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(await response.text());
+                    }
+
+                    // Start polling for status
+                    pollStatus();
+
+                } catch (error) {
+                    showError(error.message);
+                }
+            });
+
+            async function pollStatus() {
+                try {
+                    const response = await fetch('/status');
+                    const data = await response.json();
+
+                    if (data.error) {
+                        showError(data.error);
+                        return;
+                    }
+
+                    progressBar.style.width = `${data.progress}%`;
+                    progressBar.textContent = `${data.progress}%`;
+                    
+                    if (data.status_message) {
+                        statusMessage.textContent = data.status_message;
+                    }
+
+                    if (data.result) {
+                        // Mixing completed successfully
+                        loadingSpinner.style.display = 'none';
+                        progressWrapper.style.display = 'none';
+                        resultWrapper.style.display = 'block';
+                        
+                        // Set download link
+                        downloadButton.href = `/download/${data.result}`;
+                        return;
+                    }
+
+                    if (data.is_mixing) {
+                        // Continue polling
+                        setTimeout(pollStatus, 1000);
+                    } else {
+                        if (!data.result) {
+                            showError('Mixing process failed');
+                        }
+                    }
+
+                } catch (error) {
+                    showError('Error checking mixing status');
+                }
+            }
+
+            function showError(message) {
+                loadingSpinner.style.display = 'none';
+                progressWrapper.style.display = 'none';
+                errorMessage.style.display = 'block';
+                errorMessage.textContent = message;
+                form.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html> 
